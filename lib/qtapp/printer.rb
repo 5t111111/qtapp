@@ -1,4 +1,5 @@
 require 'singleton'
+require 'qtapp/crazy'
 
 module Qtapp
   module Printer

@@ -4,7 +4,7 @@ require "qtapp/version"
 
 Gem::Specification.new do |s|
   s.name        = "qtapp"
-  s.version     = QTapp::VERSION
+  s.version     = Qtapp::VERSION
   s.authors     = ["Keita Urashima", "Hirofumi Wakasugi"]
   s.email       = ["ursm@ursm.jp"]
   s.homepage    = "http://github.com/5t111111/qtapp"

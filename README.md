@@ -1,26 +1,26 @@
-# tapp [![Build Status](https://travis-ci.org/esminc/tapp.svg?branch=master)](https://travis-ci.org/esminc/tapp) [![Code Climate](https://codeclimate.com/github/esminc/tapp/badges/gpa.svg)](https://codeclimate.com/github/esminc/tapp)
+# qtapp [![Build Status](https://travis-ci.org/esminc/qtapp.svg?branch=master)](https://travis-ci.org/esminc/qtapp) [![Code Climate](https://codeclimate.com/github/esminc/qtapp/badges/gpa.svg)](https://codeclimate.com/github/esminc/qtapp)
 
 ## Install
 
 ```
-$ gem install tapp
+$ gem install qtapp
 ```
 
 ## Usage
 
 ``` ruby
-require 'tapp'
+require 'qtapp'
 
-'foo'.tapp   #=> `pp 'foo'` and return 'foo'
+'foo'.qtapp   #=> `pp 'foo'` and return 'foo'
 'foo'.taputs #=> `puts 'foo'` and return 'foo'
 ```
 
-See more examples in [spec/acceptance](https://github.com/esminc/tapp/tree/master/spec/acceptance) directory.
+See more examples in [spec/acceptance](https://github.com/esminc/qtapp/tree/master/spec/acceptance) directory.
 
 ## Configuration
 
 ``` ruby
-Tapp.configure do |config|
+Qtapp.configure do |config|
   config.default_printer = :awesome_print
   config.report_caller   = true
 end
@@ -35,12 +35,12 @@ end
   <tr>
     <td><code>default_printer</code></td>
     <td><code>:pretty_print</code></td>
-    <td><a href="https://github.com/esminc/tapp/blob/master/spec/acceptance/default_printer.feature">default_printer.feature</a></td>
+    <td><a href="https://github.com/esminc/qtapp/blob/master/spec/acceptance/default_printer.feature">default_printer.feature</a></td>
   </tr>
   <tr>
     <td><code>report_caller</code></td>
     <td><code>false</code></td>
-    <td><a href="https://github.com/esminc/tapp/blob/master/spec/acceptance/report_caller.feature">report_caller.feature</a></td>
+    <td><a href="https://github.com/esminc/qtapp/blob/master/spec/acceptance/report_caller.feature">report_caller.feature</a></td>
   </tr>
 </table>
 
@@ -55,7 +55,7 @@ end
 * Send me a pull request. Bonus points for topic branches.
 
 ## Contributors
-See https://github.com/esminc/tapp/contributors
+See https://github.com/esminc/qtapp/contributors
 
 ## Copyright
 Copyright &copy; 2010-2012 Keita Urashima. See LICENSE for details.

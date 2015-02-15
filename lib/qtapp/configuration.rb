@@ -1,4 +1,4 @@
-module Tapp
+module Qtapp
   class Configuration
     attr_accessor :default_printer, :report_caller
 

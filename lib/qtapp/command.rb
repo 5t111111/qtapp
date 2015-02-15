@@ -1,10 +1,10 @@
 require 'thor'
 
-module Tapp
+module Qtapp
   class Command < Thor
-    desc 'grep [<git-grep-options>]', 'Print lines using tapp'
+    desc 'grep [<git-grep-options>]', 'Print lines using qtapp'
     def grep(*)
-      opts = ['--word-regexp', '-e', 'tapp', '-e', 'taputs', '-e', 'taap', *ARGV.drop(1)]
+      opts = ['--word-regexp', '-e', 'qtapp', '-e', 'qtaputs', '-e', 'qtaap', *ARGV.drop(1)]
       git_grep = ['git', 'grep', opts].flatten.join(' ')
       puts `#{git_grep}`.gsub(/^Gemfile(\.lock)?:.+?\n/, '')
     end

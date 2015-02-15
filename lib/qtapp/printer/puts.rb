@@ -1,6 +1,6 @@
-require 'tapp/printer'
+require 'qtapp/printer'
 
-module Tapp::Printer
+module Qtapp::Printer
   class Puts < Base
     def print(*args)
       puts *args

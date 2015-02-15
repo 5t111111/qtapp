@@ -1,13 +1,13 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "tapp/version"
+require "qtapp/version"
 
 Gem::Specification.new do |s|
-  s.name        = "tapp"
-  s.version     = Tapp::VERSION
-  s.authors     = ["Keita Urashima"]
+  s.name        = "qtapp"
+  s.version     = QTapp::VERSION
+  s.authors     = ["Keita Urashima", "Hirofumi Wakasugi"]
   s.email       = ["ursm@ursm.jp"]
-  s.homepage    = "http://github.com/esminc/tapp"
+  s.homepage    = "http://github.com/5t111111/qtapp"
   s.summary     = %q{tap { pp self }}
   s.description = %q{tap { pp self }}
 
@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_runtime_dependency 'thor'
+  s.add_runtime_dependency 'highline'
 
   s.add_development_dependency 'turnip'
   s.add_development_dependency 'awesome_print'

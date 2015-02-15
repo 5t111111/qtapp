@@ -1,7 +1,7 @@
-require 'tapp/printer'
+require 'qtapp/printer'
 require 'pp'
 
-module Tapp::Printer
+module Qtapp::Printer
   class PrettyPrint < Base
     def print(*args)
       pp *args

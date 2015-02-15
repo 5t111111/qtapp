@@ -1,8 +1,8 @@
-Feature: Object#tapp
-  Scenario: Call tapp within methods chain
+Feature: Object#qtapp
+  Scenario: Call qtapp within methods chain
     Given I have the following code:
     """
-    (1..5).tapp.select(&:odd?).tapp.inject(&:+)
+    (1..5).qtapp.select(&:odd?).qtapp.inject(&:+)
     """
 
     When Ruby it

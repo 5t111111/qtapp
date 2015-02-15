@@ -1,7 +1,7 @@
-require 'tapp/printer'
+require 'qtapp/printer'
 require 'ap'
 
-module Tapp::Printer
+module Qtapp::Printer
   class AwesomePrint < Base
     def print(*args)
       ap *args

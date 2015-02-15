@@ -1,12 +1,12 @@
 Feature: config.report_caller
-  Scenario: set config.report_caller to true and call tapp
+  Scenario: set config.report_caller to true and call qtapp
     Given a file named "hello.rb" with:
     """
-    Tapp.config.report_caller = true
+    Qtapp.config.report_caller = true
 
     class Hello
       def say
-        'hello'.tapp
+        'hello'.qtapp
       end
     end
 
@@ -16,6 +16,6 @@ Feature: config.report_caller
     When Ruby it
     Then I should see:
     """
-    `tapp' in hello.rb:5:in `say'
+    `qtapp' in hello.rb:5:in `say'
     "hello"
     """

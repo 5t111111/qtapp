@@ -1,10 +1,10 @@
 require 'singleton'
 
-module Tapp
+module Qtapp
   module Printer
-    autoload :AwesomePrint, 'tapp/printer/awesome_print'
-    autoload :PrettyPrint,  'tapp/printer/pretty_print'
-    autoload :Puts,         'tapp/printer/puts'
+    autoload :AwesomePrint, 'qtapp/printer/awesome_print'
+    autoload :PrettyPrint,  'qtapp/printer/pretty_print'
+    autoload :Puts,         'qtapp/printer/puts'
 
     def self.instance(name)
       case name

@@ -1,4 +1,7 @@
-# qtapp [![Build Status](https://travis-ci.org/esminc/qtapp.svg?branch=master)](https://travis-ci.org/esminc/qtapp) [![Code Climate](https://codeclimate.com/github/esminc/qtapp/badges/gpa.svg)](https://codeclimate.com/github/esminc/qtapp)
+# qtapp [![Build Status](https://travis-ci.org/5t111111/qtapp.svg)](https://travis-ci.org/5t111111/qtapp) [![Code Climate](https://codeclimate.com/github/5t111111/qtapp/badges/gpa.svg)](https://codeclimate.com/github/5t111111/qtapp)
+
+qtapp adds `Object#qtapp` for outputting debug logs with ease, forked from [tapp](https://github.com/esminc/tapp).
+The difference between the original `tapp` and `qtapp` is only one thing, `qtapp` decorates logs with CRAZY HANKAKU KANAs.
 
 ## Install
 
@@ -11,11 +14,9 @@ $ gem install qtapp
 ``` ruby
 require 'qtapp'
 
-'foo'.qtapp   #=> `pp 'foo'` and return 'foo'
-'foo'.taputs #=> `puts 'foo'` and return 'foo'
+'foo'.qtapp
+'foo'.taputs
 ```
-
-See more examples in [spec/acceptance](https://github.com/esminc/qtapp/tree/master/spec/acceptance) directory.
 
 ## Configuration
 
@@ -25,24 +26,6 @@ Qtapp.configure do |config|
   config.report_caller   = true
 end
 ```
-
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Default</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td><code>default_printer</code></td>
-    <td><code>:pretty_print</code></td>
-    <td><a href="https://github.com/esminc/qtapp/blob/master/spec/acceptance/default_printer.feature">default_printer.feature</a></td>
-  </tr>
-  <tr>
-    <td><code>report_caller</code></td>
-    <td><code>false</code></td>
-    <td><a href="https://github.com/esminc/qtapp/blob/master/spec/acceptance/report_caller.feature">report_caller.feature</a></td>
-  </tr>
-</table>
 
 ## Note on Patches/Pull Requests
 
@@ -54,8 +37,10 @@ end
   (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
-## Contributors
-See https://github.com/esminc/qtapp/contributors
-
 ## Copyright
-Copyright &copy; 2010-2012 Keita Urashima. See LICENSE for details.
+
+Copyright &copy; 2015 Hirofumi Wakasugi. See LICENSE for details.
+
+### tapp
+
+Copyright &copy; 2010-2012 Keita Urashima.

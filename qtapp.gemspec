@@ -5,11 +5,11 @@ require "qtapp/version"
 Gem::Specification.new do |s|
   s.name        = "qtapp"
   s.version     = Qtapp::VERSION
-  s.authors     = ["Keita Urashima", "Hirofumi Wakasugi"]
-  s.email       = ["ursm@ursm.jp"]
+  s.authors     = ["Hirofumi Wakasugi"]
+  s.email       = ["baenej@gmail.com"]
   s.homepage    = "http://github.com/5t111111/qtapp"
-  s.summary     = %q{tap { pp self }}
-  s.description = %q{tap { pp self }}
+  s.summary     = %q{tap { pp self } decorated with CRAZY HANKAKU KANAs around }
+  s.description = %q{tap { pp self } decorated with CRAZY HANKAKU KANAs around }
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
@@ -21,4 +21,6 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'turnip'
   s.add_development_dependency 'awesome_print'
+
+  s.add_development_dependency 'rake'
 end

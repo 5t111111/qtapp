@@ -11,12 +11,12 @@ module Qtapp
       }
     end
 
-    def taputs(&block)
+    def qtaputs(&block)
       qtapp :puts, &block
     end
 
-    def taap
-      warn 'DEPRECATION WARNING: `taap` is deprecated. Set `Qtapp.config.default_printer = :awesome_print` and use `qtapp` instead.'
+    def qtaap
+      warn 'DEPRECATION WARNING: `qtaap` is deprecated. Set `Qtapp.config.default_printer = :awesome_print` and use `qtapp` instead.'
 
       qtapp :awesome_print
     end

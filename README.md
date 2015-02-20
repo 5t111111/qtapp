@@ -15,7 +15,7 @@ $ gem install qtapp
 require 'qtapp'
 
 'foo'.qtapp
-'foo'.taputs
+'foo'.qtaputs
 ```
 
 ## Configuration

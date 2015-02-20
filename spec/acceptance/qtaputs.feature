@@ -1,8 +1,8 @@
-Feature: Object#taputs
-  Scenario: Call taputs within methods chain
+Feature: Object#qtaputs
+  Scenario: Call qtaputs within methods chain
     Given I have the following code:
     """
-    (1..5).taputs.select(&:odd?).taputs.inject(&:+)
+    (1..5).qtaputs.select(&:odd?).qtaputs.inject(&:+)
     """
 
     When Ruby it
@@ -15,10 +15,10 @@ Feature: Object#taputs
     5
     """
 
-  Scenario: Call taputs with block
+  Scenario: Call qtaputs with block
     Given I have the following code:
     """
-    (1..5).taputs(&:count).select(&:odd?).taputs
+    (1..5).qtaputs(&:count).select(&:odd?).qtaputs
     """
 
     When Ruby it

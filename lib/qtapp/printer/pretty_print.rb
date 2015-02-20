@@ -4,9 +4,10 @@ require 'pp'
 module Qtapp::Printer
   class PrettyPrint < Base
     def print(*args)
-      Qtapp::Crazy.crazy_line
+      color = Qtapp::Crazy.colors.sample
+      Qtapp::Crazy.crazy_line(color)
       pp *args
-      Qtapp::Crazy.crazy_line
+      Qtapp::Crazy.crazy_line(color)
     end
   end
 end

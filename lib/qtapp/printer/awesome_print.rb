@@ -4,9 +4,10 @@ require 'ap'
 module Qtapp::Printer
   class AwesomePrint < Base
     def print(*args)
-      Qtapp::Crazy.crazy_line
+      color = Qtapp::Crazy.colors.sample
+      Qtapp::Crazy.crazy_line(color)
       ap *args
-      Qtapp::Crazy.crazy_line
+      Qtapp::Crazy.crazy_line(color)
     end
   end
 end

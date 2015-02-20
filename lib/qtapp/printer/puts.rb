@@ -3,9 +3,10 @@ require 'qtapp/printer'
 module Qtapp::Printer
   class Puts < Base
     def print(*args)
-      Qtapp::Crazy.crazy_line
+      color = Qtapp::Crazy.colors.sample
+      Qtapp::Crazy.crazy_line(color)
       puts *args
-      Qtapp::Crazy.crazy_line
+      Qtapp::Crazy.crazy_line(color)
     end
   end
 end
